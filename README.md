@@ -27,9 +27,17 @@ We can observe that it's an HTTP, by going into the ``Authorization`` section, w
 ```sh
 PASS : p******d
 ```
-## BLUETOOTH - Unkown file
+## BLUETOOTH - Unknown file
 On the app, go to the tab ``Wireless`` & ``Bluetooth Device``, we can get the name of the device under ``Name``: ``GT-S7390G`` and its MAC ``0*:**:**:**:**:*6`` under ``BD_ADDR``.
 We can get the sha-1 hash checksum of the level by following the example ``AB:CD:EF:12:34:56myPhone``. So we will have to concatenate the MAC address ``in capitals`` with the name of the device, and then calculate the resulting sha-1.
 ```sh
 PASS : c**************************************b
+```
+## SIP - authentification
+We can see in the first line that there is a plain text
+```sh
+"PLAIN" ****
+```
+```sh
+PASS : ****
 ```
